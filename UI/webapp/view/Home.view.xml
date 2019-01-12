@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.sl.UI.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="idEmployeesTable" inset="false" items="{ path: '/Employees', sorter: { path: 'EmpId' } }">
+						<columns>
+							<Column width="12em">
+								<Text text="Emp ID"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Name"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{EmpId}"/>
+								</cells>
+								<cells>
+									<Text text="{Name}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
