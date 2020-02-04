@@ -12,7 +12,7 @@
 		<java.source.level>1.8</java.source.level>
 		<java.target.level>${java.source.level}</java.target.level>
 		<!--<odata.version>4.0.0-beta-02</odata.version>-->
-		<odata.version>4.0.0</odata.version>
+		<odata.version>4.7.1</odata.version>
 	</properties>
 	<dependencies>
 		<dependency>
